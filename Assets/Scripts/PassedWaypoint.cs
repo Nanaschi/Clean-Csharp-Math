@@ -24,7 +24,13 @@ public class PassedWaypoint : MonoBehaviour
         float progress = (a.x * b.x + a.y * b.y + a.z * b.z) / (b.x * b.x + b.y * b.y + b.z * b.z);
 
         var progressAlt = Vector3.Dot(a, b) / Vector3.Dot(b, b);
-        print(progressAlt);
+        
+        
+        print(Vector3.Dot(a, b));
+        print(Vector3.Dot(b, b));
+        
+        
+        
         //If progress is above 1 we know we have passed the waypoint
         if (progress > 1.0f)
         {
